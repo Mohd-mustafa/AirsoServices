@@ -1,0 +1,104 @@
+.flight-details-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    width: 100%;
+    gap: 10px;
+    margin-top: 100px;
+  }
+
+.flight-details-section{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 20px 10px 30px;
+    width: 80%;
+    height:250px;
+    max-height: 250px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+.flight-images img{
+    width: 250px;
+    height: 200px;
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+     /* Centers horizontally */
+}
+
+.plan-name{
+   align-items: flex-start;
+  }
+
+ .umarh-guide{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+ }
+
+ .umarh-guide .ziarah{
+    color: green;
+    background-color: rgb(214, 243, 214);
+    border-radius: 10px;
+    padding: 10px;
+ }
+
+ .umarh-guide .inclusive{
+    color: palevioletred;
+    background-color: rgb(245, 213, 223);
+    border-radius: 10px;
+    padding: 10px;
+ 
+ }
+
+ .umarh-nights{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+
+ }
+
+ .umrah-includes{
+    display: flex;
+    gap: 15px;
+ }
+
+ .plan-price{
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-dropdown {
+    width: 190px;
+    height: 50px;
+    border: 1px solid #aaa8a8;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: rgb(247, 239, 229);
+  }
+
+  .plan-pricing{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+  }
+  .plan-pricing .rate{
+    font-weight: bold;
+    font-size: 22px;
+
+  }
+.starting{
+    font-size: 14px;
+}
+  .plan-button{
+    align-self: flex-end;
+    
+  }

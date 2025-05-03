@@ -1,0 +1,85 @@
+.contact-us-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.contact-form-container{
+     background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 15px;
+    width: 600px;
+    border-radius: 10px;
+ }
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%
+} 
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.read-only {
+    background-color: rgba(255, 255, 255, 0.6); /* Light transparent background */
+    backdrop-filter: blur(4px); /* Apply blur effect */
+    pointer-events: none; /* Prevent interaction */
+    color: #555; /* Dim text color */
+}
+
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 70%;
+}
+
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.submit-btn:hover {
+    background: #0056b3;
+}
+
+/* Responsive - stack fields in a single column for smaller screens */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+}

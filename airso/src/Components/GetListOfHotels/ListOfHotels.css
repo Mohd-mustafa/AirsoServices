@@ -1,0 +1,137 @@
+.hotel-list-container {
+    padding: 60px 30px;
+    background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+  }
+  .hotel-heading {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .hotel-heading h2 {
+    font-size: 36px;
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .hotel-heading p {
+    font-size: 18px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .error {
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+/* Add padding inside each slick slide */
+.slick-slide {
+    padding: 0 12px;  /* 12px left & right padding around each card */
+    box-sizing: border-box;
+  }
+  
+  .hotel-card {
+    width: 320px;
+    height: 380px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+   
+.hotel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .hotel-card img {
+    width: calc(100% - 20px); /* reduces width to make space for padding */
+    height: 200px;
+    padding: 5px; /* padding from all 4 sides */
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 20px;
+    
+   }
+  
+  .hotel-details {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .hotel-details h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #222;
+  }
+  
+  .hotel-details p {
+    font-size: 14px;
+    color: #555;
+    margin: 3px 0;
+    align-self: flex-start;
+    
+  }
+  
+  .hotel-details .rating {
+    font-size: 14px;
+    color: #f39c12;
+    font-weight: 600;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+    margin: 20px 0;
+  }
+  /* Custom Slick dots and arrows if you're using react-slick */
+  .slick-prev, .slick-next {
+    z-index: 1;
+  }
+  
+  .slick-prev:before, .slick-next:before {
+    font-size: 28px;
+    color: #2c3e50;
+  }
+  
+  .slick-dots li button:before {
+    font-size: 14px;
+    color: #7f8c8d;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #2c3e50;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hotel-heading h2 {
+      font-size: 28px;
+    }
+    
+    .hotel-heading p {
+      font-size: 16px;
+    }
+  
+    .hotel-details h3 {
+      font-size: 20px;
+    }
+  
+    .hotel-card img {
+      height: 180px;
+    }
+  }

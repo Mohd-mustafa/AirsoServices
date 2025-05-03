@@ -1,0 +1,786 @@
+/* VisaDetails.css */
+.visa-details-container {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+ 
+/* Breadcrumb */
+.breadcrumb {
+    font-size: 14px;
+    color: #5659e9;
+    margin-bottom: 20px;
+}
+
+.breadcrumb span {
+    margin-right: 5px;
+}
+
+/* Banner Section */
+.banner {
+    background-color: #f88c5d;
+    color: white;
+    padding: 30px;
+    position: relative;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    
+}
+
+.banner-content{
+  margin-left: 100px;
+}
+
+.banner h1 {
+    font-size: 2rem;
+     margin-bottom: 10px;
+}
+ 
+.banner .approval-rate {
+    font-size: 0.8rem;
+     color: black;
+    background-color: rgb(192, 254, 192);
+    padding: 10px;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.processing-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+     
+}
+
+.processing-time h2{
+  color: #fff;
+  margin-top: 10px;
+}
+
+.processing-time p {
+    font-size: 20px;
+    color: #fff;
+ }
+ 
+.types-of-visa-list {
+    padding: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+     position: sticky;
+    top: 80px; /* Sticks to the top when banner is out of view */
+    z-index: 100;
+ }
+
+.types-of-visa-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-left: 100px;
+
+}
+
+.types-of-visa-list li {
+    font-size: 14px;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+.types-of-visa-list li:hover {
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.sticky-form {
+    position: fixed;
+    top: 150px; /* Adjust as needed */
+    right: 50px;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    min-width: 430px;
+    max-height: auto;
+    overflow-y: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    color: #ddd; /* Text color for better readability */
+}
+
+.sticky-form h3 {
+    margin-bottom: 10px;
+    color: #180d0d;
+}
+
+.close-button {
+  display: none; 
+}
+
+
+.form-grid{
+  width: 400px;
+}
+
+
+
+input, select {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 8px;
+    margin-bottom: 10px;
+    color: #fff;
+    border-radius: 6px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #ddd;
+}
+
+
+   /* In your CSS file */
+   .visa-select {
+    background-color: white;
+    color: black; /* So the text is readable */
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+  
+  }
+  
+
+button[type="submit"] {
+    background-color: rgb(219, 127, 6);
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #333;
+}
+
+.section {
+    flex-grow: 1;
+    background-color: #fff;
+    margin-top: 20px;
+    height: auto;
+    overflow-y: auto;
+    width: 65%;
+}
+
+#type-of-visa {
+   display: flex;
+   justify-content: space-between;
+  }
+
+.visa-card-container {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+
+  .visa-card-container-heading{
+            margin: 10px 20px;
+   }
+
+   .visa-card-main-container{
+    display: flex;
+    gap: 20px;
+  }
+
+  .card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    height: 350px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card h3 {
+    background-color: #d6e4f0;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #003366;
+    text-align: center;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .info strong {
+    color: #333;
+  }
+  
+  .info span {
+    color: #555;
+    font-weight: bold;
+  }
+ 
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5659e9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #4346c3;
+  }
+ 
+  #documents{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .document-container {
+     border-radius: 8px;
+     width: 100%;
+     overflow: hidden;
+     margin-bottom: 20px;
+  }
+  
+  .document-header {
+    background-color: #ffff;
+    padding: 15px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-weight: bold;
+    user-select: none;
+    transition: background-color 0.3s;
+  }
+  
+   
+  .toggle-icon {
+    font-size: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .document-content {
+    padding: 15px 20px;
+    background-color: #fff;
+   }
+
+   .document-content p{
+    text-align: left;
+    margin-bottom: 20px;
+   }
+  
+  .note {
+    color: #d9534f;
+    font-weight: bold;
+  }
+  
+
+ul {
+    list-style-type: circle;
+    margin-left: 20px;
+    color: #374151;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.note {
+    margin-top: 15px;
+    background-color: #fef3c7;
+    padding: 10px;
+    border-radius: 6px;
+    color: #92400e;
+    font-size: 0.9em;
+    border: 1px solid #fcd34d;
+}
+
+.document-header:hover {
+    background-color: #d1d5db;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f6fb;
+    font-family: Arial, sans-serif;
+    text-align: start;
+    width: 100%;
+  }
+  
+  .experts-container-visa {
+    display: flex; 
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #e9edf3;
+    border-radius: 10px;
+  }
+  
+  .experts-container h2 {
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .experts-list {
+    display: flex;  
+    gap: 40px;
+   }
+  
+  .expert-card {
+    display: flex;
+    flex-direction: row;
+     width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .expert-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .expert-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  .expert-card-details{
+       align-items: flex-start;
+  }
+
+  .visa-banner {
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .red-banner {
+    background-color: #c0392b;
+  }
+  
+  .blue-banner {
+    background-color: #1abc9c;
+  }
+  
+  .cta-button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+    cursor: pointer;
+    color: #c0392b;
+    font-weight: bold;
+  }
+  
+  .cta-button:hover {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .arrow-icon {
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+  .why-choose-us {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .feature {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .feature img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+.accordion-container {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #f4f6f8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .accordion-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .accordion-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 12px;
+    background-color: #fff;
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .accordion-title:hover {
+    background-color: #e0e7ff;
+    transform: translateX(3px);
+  }
+  
+  .accordion-content {
+    background-color: #f9fafb;
+    padding: 10px;
+    color: #555;
+    font-size: 0.9rem;
+    margin-left: 20px;
+    border-left: 3px solid #007bff;
+    transition: max-height 0.4s ease, padding 0.3s;
+    overflow: hidden;
+    max-height: 500px;
+  }
+  
+  .accordion-content.collapsed {
+    max-height: 0;
+    padding: 0;
+  }
+  
+  .note {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8eff5;
+    border-radius: 8px;
+    color: #444;
+    font-size: 0.9rem;
+    border-left: 4px solid #007bff;
+    transition: background-color 0.3s;
+  }
+  
+  .note:hover {
+    background-color: #d0e2f2;
+  }
+  
+  .visit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-color: #f5f5f5; /* Light gray background */
+}
+
+.visit-us-card {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Smooth shadow */
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.visit-us-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+.visit-us-card h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.visit-us-card span {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive Design - Media Queries */
+@media (max-width: 780px) {
+    .banner {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .banner h1,
+    .banner .approval-rate,
+    .processing-time {
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sticky-form{
+      top: 100px;
+    }
+     
+
+    .processing-time {
+        margin-top: 15px;
+    }
+
+    .processing-time span {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+       .visa-details-container{
+        justify-content: center;
+        align-items: center; 
+        width: 100%;
+
+       }
+     .breadcrumb{
+      display: flex;
+      width: 100%;
+      } 
+     
+     .banner-content{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 0;
+     }
+
+    .banner-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .approval-rate {
+        font-size: 0.7rem;
+        width: fit-content;
+    }
+
+    .processing-time {
+      display: flex;  
+      flex-direction: column;
+      align-items: flex-start;
+     }
+
+    .processing-time p {
+        font-size: 20px;
+    }
+    
+      .types-of-visa-list{
+        display: none;
+      }
+      
+      .sticky-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        right: 20px;
+        max-width: 100px;
+        
+      }
+      .close-button {
+        display: contents;
+        background: transparent;
+        border: none;
+        font-size: 25px;
+        position: absolute;
+        top: 2px;
+        right: -180px;
+        cursor: pointer;
+        color: black;
+        font-weight: bold;
+      }
+      
+      .open-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #0077ff;
+        color: #fff;
+        padding: 12px 16px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        z-index: 999;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+      
+      .open-button:hover {
+        background: #005ccc;
+      }
+
+      .form-grid{
+        width: 400px;
+        background: rgba(255, 255, 255, 0.1); /* Transparent background */
+        backdrop-filter: blur(10px); /* Frosted glass effect */
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+        border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+          }
+
+      .section{
+        width: 100%;
+      }
+
+      .visa-card-container .card{
+        display: flex;
+        flex-direction: column;
+        width: 220px;
+        height: auto;
+        font-size: 11px;
+        padding: 10px;
+      }
+
+      .visa-card-container .card h3{
+        font-size: 14px;
+        padding: 7px;
+      }
+
+      .visa-card-container .info{
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .document-container{
+        width: 100%;
+        font-size: 12px;
+       }
+   
+       .document-container .note{
+        font-size: 12px;
+       }
+
+       .app-container{
+        width: 100%;
+        display: inline-flex;
+        }
+
+       .experts-container-visa{
+        width: 100%;
+       font-size: 12px;
+       overflow: scroll;
+       }
+      .experts-list{
+        display: flex;
+        justify-content: none;
+        gap: 15px;
+       }
+       .expert-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+       }
+        .expert-card img{
+        width: 50px;
+        height: 50px;
+       }
+       .expert-card h3 {
+        font-size: 12px;
+       }
+       .expert-card p{
+        font-size: 11px;
+       }
+
+       .why-choose-us h2{
+           font-size: 14px;
+       }
+
+       .features-container{
+        display: flex;
+         font-size: 12px;
+       }
+
+       .feature{
+        display: flex;
+         gap: 20px;
+       }
+
+       .feature img{
+        width: 50px;
+        height: 50px;
+       }
+
+       .feature p{
+        font-size: 13px;
+       }
+       .visa-banner{
+        display: flex;
+        flex-direction: column;
+       } 
+
+       .visit-us-container{
+        margin-bottom: 0;
+       }
+
+       .visit-usa-card h1{
+          font-size: 26px;
+       }
+
+       .visit-usa-card p{
+        font-size: 16px;
+        color: #fff;
+       }
+ }

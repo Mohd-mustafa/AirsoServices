@@ -1,0 +1,152 @@
+/* Footer Container */
+.footer-container {
+    background: linear-gradient(135deg, #ffff, #ffffff);
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+    text-align: left;
+}
+
+/* Footer Titles */
+.footer-section h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #2c3e50; /* Dark Blue */
+    font-weight: bold;
+    border-bottom: 3px solid #ffcc00;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Paragraphs */
+.footer-section p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #4a4a4a;
+    text-align: start;
+ }
+
+/* Quick Links */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+}
+
+.footer-section ul li a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-section ul li a:hover {
+    color: #ff5722; /* Deep Orange */
+    transform: translateX(2px);
+}
+
+/* Contact Details */
+.footer-section.contact p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Individual Icon Colors */
+.social-icons a {
+    font-size: 22px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.3);
+}
+
+/* Specific Icon Colors */
+.social-icons a.facebook {
+    color: #1877f2; /* Facebook Blue */
+}
+
+.social-icons a.twitter {
+    color: #1da1f2; /* Twitter Blue */
+}
+
+.social-icons a.instagram {
+    color: #e1306c; /* Instagram Pink */
+}
+
+.social-icons a.linkedin {
+    color: #0077b5; /* LinkedIn Blue */
+}
+
+.social-icons a.youtube {
+    color: #ff0000; /* YouTube Red */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #bbb;
+    padding-top: 10px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+     
+    .footer-section .social-icons{
+        display: flex;
+        align-self: flex-start;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}

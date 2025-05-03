@@ -1,0 +1,83 @@
+.add-hotel-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Glass effect */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+.add-hotel-container h2 {
+    font-size: 24px;
+    color: #ea0303;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.add-hotel-container p {
+    color: #ff4f4f;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.add-hotel-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.add-hotel-container input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(196, 83, 83, 0.2);
+    color: black;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-hotel-container input::placeholder {
+    color: rgba(101, 100, 100, 0.7);
+}
+
+.add-hotel-container input:focus {
+    background: rgba(197, 16, 16, 0.4);
+    box-shadow: 0 0 8px rgba(11, 0, 0, 0.5);
+}
+
+.add-hotel-container button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff6b6b, #ff4f4f);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.add-hotel-container button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(45deg, #ff4f4f, #ff2e2e);
+    box-shadow: 0 4px 12px rgba(255, 79, 79, 0.3);
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

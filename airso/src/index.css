@@ -1,0 +1,56 @@
+/* Resetting some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Simple and readable font */
+  background-color: #f4f4f9; /* Light background for a clean look */
+  color: #333; /* Dark text for good contrast */
+  line-height: 1.6;
+  min-height: 100vh; /* Full viewport height */
+  margin-top: 100px;
+ }
+
+/* Global container to center content */
+ /* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px); /* 2 cards per row on medium screens */
+  }
+
+  .main-content {
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%; /* 1 card per row on small screens */
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 5px 0;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+}

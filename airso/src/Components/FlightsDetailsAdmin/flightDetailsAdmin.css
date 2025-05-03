@@ -1,0 +1,482 @@
+/* Main container */
+.flight-details-admin-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    width: 100%;
+    gap: 10px;
+    margin-top: 100px;
+    
+}
+
+/* Flight section card */
+.flight-details-admin-section {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 20px 10px 30px;
+    width: 90%;
+    height:250px;
+     background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+.flight-details-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Flight image */
+.flight-details-images img {
+    width: 250px;
+    height: 200px;
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+   
+}
+
+/* Plan details */
+.plan-name-details {
+    align-items: flex-start;
+}
+
+.plan-name h1 {
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Guide details */
+.umarh-guide-admin {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.umarh-guide-admin .ziarah-admin, .umarh-guide-admin .inclusive-admin {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.umarh-guide-admin .ziarah-admin {
+    color: green;
+    background-color: rgb(214, 243, 214);
+    border-radius: 10px;
+    padding: 10px;
+ 
+}
+
+.umarh-guide-admin .inclusive-admin {
+    color: palevioletred;
+    background-color: rgb(245, 213, 223);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Nights details */
+.umarh-nights-admin {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+
+}
+
+/* Umrah Includes Section */
+.umrah-includes-admin {
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+}
+
+.umrah-includes-admin span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    background: #f7f7f7;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.umrah-includes-admin span:hover {
+    background: #eaeaea;
+}
+
+/* Plan Pricing Section */
+.plan-price-admin {
+    display: flex;
+  flex-direction: column;
+}
+
+.plan-dropdown-admin {
+    width: 200px;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #f3ede7;
+    font-size: 14px;
+    font-weight: 500;
+    transition: border 0.3s ease;
+}
+
+.plan-dropdown-admin:hover {
+    border-color: #a18a76;
+}
+
+/* Pricing details */
+.plan-pricing-admin {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+.plan-pricing-admin .rate {
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+}
+
+.price-starting-admin {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.starting {
+    font-size: 14px;
+    color: #5c5757;
+}
+
+.price-starting-admin .rate{
+    font-weight: bold;
+}
+
+/* Action buttons */
+.plan-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.plan-buttons button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.buttons-sections{
+    display: flex;
+}
+
+.edit-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.delete-button {
+    background-color: #e53935;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+.edit-button,
+.delete-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Blur effect when form is open */
+.blur-background {
+  filter: blur(5px);
+  pointer-events: none;
+  user-select: none;
+}
+/* Ensure edit form is on top */
+.edit-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures it appears on top */
+  }
+  
+  /* Edit form styling */
+  /* Ensure the edit form stays at the top */
+.edit-form {
+    position: absolute;
+    top: 100px; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it appears above other elements */
+  }
+  
+.edit-form label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.edit-form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.edit-form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.save-button,
+.cancel-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.save-button {
+  background-color: #28a745;
+  color: white;
+  margin-right: 10px;
+}
+
+.cancel-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+.no-groups-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .flight-details-section {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+    }
+
+    .plan-price {
+        align-items: center;
+        width: 100%;
+    }
+
+    .umrah-includes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+ 
+@media (max-width: 768px) {
+    .flight-details-admin-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+     }
+
+    .flight-details-admin-section {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        padding: 15px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;  }
+
+    .flight-details-images img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;     }
+        
+        .plan-name-detail h1 {
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    
+        .umarh-guide-admin {
+            display: flex;
+            flex-direction: row;
+          }
+    
+        .umarh-guide-admin .ziarah-admin, 
+        .umarh-guide-admin .inclusive-admin
+       {     font-size: 10px;
+        width: fit-content;
+        }
+
+        .ziarah-admin .icon-kaba,
+        .inclusive-admin .icon-right {
+          font-size: 16px;
+        }
+    
+        .umarh-nights-admin {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    
+        .umarh-nights-admin p {
+            font-size: 12px;
+            text-align: center;
+            background-color: #dff7e4;
+            padding: 5px;
+            border-radius: 10px;
+        }
+    
+        .umrah-includes-admin {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px 0;
+        }
+    
+        .umrah-includes-admin span {
+            font-size: 12px;
+        }
+    
+        .plan-price-admin {
+             flex-direction: row;
+             gap: 20px;
+           }
+    
+        .plan-drop-admin {
+            display: flex;
+         }
+    
+        .plan-drop-admin .plan-dropdown-admin {
+              font-size: 12px;
+              width: 120px;
+        }
+    
+        .price-starting-admin {
+            display: flex;
+            flex-direction: column;
+         }
+          
+         .price-starting-admin span{
+            font-size: 12px;
+         }
+
+        .buttons-section {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+        }
+    
+        .buttons-section button {
+            width: 100%;
+            font-size: 14px;
+            padding: 10px;
+        }
+    
+        .edit-form-overlay {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+    
+        .edit-form {
+            width: 90%;
+            max-width: 350px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    
+        .edit-form input {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+        }
+    
+        .form-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+        .form-buttons button {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+        }
+    }

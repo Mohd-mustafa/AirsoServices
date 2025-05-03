@@ -1,0 +1,62 @@
+.visaTypeFormContainer {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  .visaTypeFormTitle {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .visaTypeForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .visaTypeFormGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .visaTypeFormGroup label {
+    font-weight: 500;
+    margin-bottom: 3px;
+    color: #444;
+    font-size: 14px;
+  }
+  
+  .visaTypeInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .visaTypeInput:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .visaTypeSubmitButton {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .visaTypeSubmitButton:hover {
+    background-color: #0056b3;
+  }
+  

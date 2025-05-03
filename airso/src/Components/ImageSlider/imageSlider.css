@@ -1,0 +1,70 @@
+.slider-container {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  margin-top: 70px;
+}
+
+/* 🟢 Text Menu as Separate Section Above */
+.text-menu {
+  width: 30%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Creates space between text and slider */
+  text-align: center;
+}
+
+.text-overlay h2,
+.text-overlay h3,
+.text-overlay p {
+  margin: 5px 0;
+}
+
+.register-button {
+  background-color: gold;
+  color: black;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background-color: darkgoldenrod;
+}
+
+/* 🟢 Swiper Image Slider */
+.swiper-container {
+  width: 100%;
+  height: 500px;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* 🟢 Swiper Navigation */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: gold !important;
+}

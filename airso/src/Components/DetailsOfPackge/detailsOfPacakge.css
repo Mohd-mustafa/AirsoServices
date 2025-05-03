@@ -1,0 +1,180 @@
+.details-of-package-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap to the next row if needed */
+  gap: 15px;
+  width: 100%;
+  justify-content: center /* Distributes cards evenly with gaps */
+}
+
+.details-card {  
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: calc(25.33% - 5px); /* Ensures 3 cards per row with proper gap */
+  height:auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+   
+}
+
+.image-container{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+  object-fit: cover;
+  position: relative;
+  transition: box-shadow 0.3s ease;
+}
+
+.card-image:hover {
+  animation: shadow-slide 0.5s ease forwards; /* Trigger animation on hover */
+}
+
+@keyframes shadow-slide {
+  0% {
+      box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+      box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+      box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.image-overlay{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.details-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.details-card p {
+  font-size: 1rem;
+}
+
+.details-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.details-card a:hover {
+  text-decoration: underline;
+}
+
+.bottom-heading {
+  font-size: 14px;
+  margin: 10px 10px;
+}
+
+.whats-include {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.top-row,
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.top-row p:hover,
+.bottom-row p:hover {
+  color: #007BFF; /* Change text color on hover (example blue) */
+  transform: scale(1);
+}
+
+.top-row p, .bottom-row p {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-row p + p, 
+.bottom-row p + p {
+  margin-left: 10px;
+}
+
+.price-section{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px ;
+  font-size: 16px;
+  font-style: italic;
+  color: black;
+  margin-top: 10px;
+}
+.pirce{
+   color: green;
+}
+
+.price-section span{
+  color: black;
+}
+
+.details-button {
+  text-align: center;
+  background-color: #fbddb3;
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px; /* Optional: Adds rounded corners */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Add hover effect */
+.details-button:hover {
+  background-color: #fca169;
+  transform: scale(1.1); /* Slightly enlarges the button */
+}
+
+/* Add animation for background color */
+.details-button:hover {
+  animation: color-change 0.5s ease forwards;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: #fbddb3;
+  }
+  100% {
+    background-color: #fca169;
+  }
+}
+
+
+/* Responsive Design for Mobile View */
+@media (max-width: 768px) {
+  .details-card {
+      width: calc(50% - 10px); /* 2 cards per row for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .details-card {
+      width: 100%; /* 1 card per row for very small screens */
+  }
+}
