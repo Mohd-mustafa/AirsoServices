@@ -8,6 +8,12 @@
 # testing
 /coverage
 
+
+backend/firebase-adminsdk.json
+backend/node_modules/
+bfg-1.14.0.jar
+
+
 # production
 /build
 
