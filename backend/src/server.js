@@ -7,9 +7,13 @@ import login from './login.js';
 import groups from './groups.js'
 import cors from "cors";
 import visaTypeRoutes from './visaTypes.js'
+import formController from './formController.js';
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
 const port = 5000;
+app.use(express.json());
 
  app.use(cors({
   origin: "http://localhost:3000", // Allow frontend
@@ -21,12 +25,12 @@ const port = 5000;
 app.use('/api', visaRoutes);
 app.use("/api",feedback)
 app.use('/api',hotel)
-app.use('auth',login);
+app.use('/auth',login);
 app.use('/api',groups)
 app.use('/api',visaTypeRoutes);
+app.use('/api',formController);
 
-app.use(express.json());
- 
+  
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);

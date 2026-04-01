@@ -1,15 +1,16 @@
 import express from 'express';
 import bodyParser from 'body-parser';
- import cookieParser from "cookie-parser";
+import cookieParser from "cookie-parser";
 import cors from "cors";
-import dotenv from "dotenv";
 import db from './db.js'
 import admin from "firebase-admin";
 import jwt from "jsonwebtoken";
 import authenticateToken from "../src/middleWare/authMiddleware.js";
 import { readFile } from "fs/promises";
 import upload from "../src/uploadMiddleware.js";
-  
+const JWT_SECRET = process.env.JWT_SECRET;
+
+
 const app = express.Router();
   
  
